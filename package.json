@@ -1,0 +1,27 @@
+{
+  "name": "stephless.github.io",
+  "version": "0.0.1",
+  "description": "A portfolio of my work",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephless/stephless.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "art",
+    "programing"
+  ],
+  "author": "Stephen Leslie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephless/stephless.github.io/issues"
+  },
+  "homepage": "https://github.com/stephless/stephless.github.io#readme",
+  "dependencies": {
+    "vanilla-tilt": "^1.7.0"
+  }
+}
