@@ -1,0 +1,74 @@
+{
+   "flat":{
+      "name":"Obsession",
+      "description":"A portfolio of my work",
+      "author":"Stephen Leslie",
+      "orientation":"ls",
+      "year":"2019",
+      "purchase":"0",
+      "directory": ""
+   },
+   "dimensional":{
+      "name":"Obsession",
+      "description":"A portfolio of my work",
+      "author":"Stephen Leslie",
+      "orientation":"ls",
+      "year":"2019",
+      "purchase":"0",
+      "directory": ""
+   },
+   "papercraft":{
+      "obsession":{
+         "name":"Obsession",
+         "description":"A portfolio of my work",
+         "author":"Stephen Leslie",
+         "orientation":"ls",
+         "year":"2019",
+         "purchase":"1",
+         "directory": "/public/assets/obsession/",
+         "layerDepth":"5",
+         "layers":[
+            "obsession1.png",
+            "obsession2.png",
+            "obsession3.png",
+            "obsession4.png",
+            "obsession5.png",
+            "obsession6.png",
+            "obsession7.png",
+            "obsession8.png"
+         ]
+      },
+      "depression":{
+         "name":"Depression",
+         "description":"A portfolio of my work",
+         "author":"Stephen Leslie",
+         "orientation":"ls",
+         "year":"2018",
+         "purchase":"1",
+         "directory": "/public/assets/depression/",
+         "layerDepth":"3px",
+         "layers":[
+            "obsession1.png",
+            "obsession2.png",
+            "obsession3.png",
+            "obsession4.png",
+            "obsession5.png"
+         ]
+      },
+      "progression":{
+         "name":"Progression",
+         "description":"A portfolio of my work",
+         "author":"Stephen Leslie",
+         "orientation":"pt",
+         "year":"2017",
+         "purchase":"1",
+         "directory": "/public/assets/progression/",
+         "layerDepth":"3px",
+         "layers":[
+            "progression1.png",
+            "progression2.png",
+            "progression3.png"
+         ]
+      }
+   }
+}

@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/stephless/stephless.github.io#readme",
   "dependencies": {
+    "less": "^3.11.3",
     "vanilla-tilt": "^1.7.0"
   }
 }
