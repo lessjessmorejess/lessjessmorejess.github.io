@@ -6,18 +6,53 @@
       "orientation":"ls",
       "year":"2019",
       "purchase":"0",
-      "directory": ""
+      "directory": "",
+      "preview": ""
    },
    "dimensional":{
-      "name":"Obsession",
+     "darktower":{
+      "name":"Dark Tower",
       "description":"A portfolio of my work",
       "author":"Stephen Leslie",
-      "orientation":"ls",
+      "orientation":"pt",
       "year":"2019",
       "purchase":"0",
-      "directory": ""
+      "directory": "/public/assets/darktower/",
+      "preview": "",
+      "sides":[
+        "dtfront.png",
+        "dtbehind.png",
+        "dtback.png",
+        "dttop.png",
+        "dttopinner.png",
+        "dtright.png",
+        "dtrightinner.png",
+        "dtbottom.png",
+        "dtbottominner.png",
+        "dtleft.png",
+        "dtleftinner.png"
+      ]
+    }
    },
    "papercraft":{
+     "template":{
+        "name":"Template",
+        "description":"A portfolio of my work",
+        "author":"Stephen Leslie",
+        "orientation":"pt/ls",
+        "year":"2017",
+        "purchase":"1",
+        "directory": "/public/assets/template/",
+        "preview": "templateP.png",
+        "layerDepth":"5",
+        "layers":[
+           "template1.png",
+           "template2.png",
+           "template3.png",
+           "template4.png",
+           "template5.png"
+        ]
+      },
       "obsession":{
          "name":"Obsession",
          "description":"A portfolio of my work",
@@ -26,6 +61,7 @@
          "year":"2019",
          "purchase":"1",
          "directory": "/public/assets/obsession/",
+         "preview": "obsessionP.png",
          "layerDepth":"5",
          "layers":[
             "obsession1.png",
@@ -46,6 +82,7 @@
          "year":"2018",
          "purchase":"1",
          "directory": "/public/assets/depression/",
+         "preview": "",
          "layerDepth":"3px",
          "layers":[
             "obsession1.png",
@@ -63,12 +100,37 @@
          "year":"2017",
          "purchase":"1",
          "directory": "/public/assets/progression/",
-         "layerDepth":"3px",
+         "preview": "progressionP.png",
+         "layerDepth":"5",
          "layers":[
             "progression1.png",
             "progression2.png",
-            "progression3.png"
+            "progression3.png",
+            "progression4.png",
+            "progression5.png"
          ]
-      }
-   }
+      },
+      "thesedays":{
+         "name":"These Days",
+         "description":"A portfolio of my work",
+         "author":"Stephen Leslie",
+         "orientation":"pt",
+         "year":"2017",
+         "purchase":"0",
+         "directory": "/public/assets/thesedays/",
+         "preview": "thesedaysP.png",
+         "layerDepth":"5",
+         "layers":[
+            "thesedays1.png",
+            "thesedays2.png",
+            "thesedays3.png",
+            "thesedays4.png",
+            "thesedays5.png",
+            "thesedays6.png",
+            "thesedays7.png",
+            "thesedays8.png",
+            "thesedays9.png"
+         ]
+       }
+     }
 }

@@ -1,0 +1,136 @@
+//Default Layer Depth, can be changed by JSON
+
+body{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+  height:100vh;
+  box-sizing: border-box;
+  background:#333;
+  color: white;
+  font-family: "proxima-nova", sans-serif;
+}
+.loading{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background:#333;
+  z-index: 100000;
+}
+#backButton{
+  color:white;
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  text-decoration:none;
+}
+#menuButton{
+  color:white;
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  text-decoration:none;
+  cursor: pointer;
+  z-index: 1000;
+}
+#menu{
+  transform: translateX(0);
+  height:100vh;
+  padding-left: 30px;
+  background: rgba(0,0,0,0.5);
+  width:20%;
+  min-width: 300px;
+  position: absolute;
+  right:-500px;
+  transition: .7s ease-in-out;
+
+
+  #name{
+    display: inline-block;
+    padding-right: 10px;
+    margin-bottom: 5px;
+  }
+  #purchase{
+    display: inline-block;
+    font-style: italic;
+    font-size: .8em;
+    text-decoration:underline;
+  }
+  #author{
+    margin: 0 0 10px;
+    font-size: .8em;
+    font-style: italic;
+  }
+  #description{
+    font-size: 1em;
+  }
+}
+.other{
+  width:90%;
+  max-width: 70%;
+  max-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tiltBox{
+  padding-top: 62%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  max-height: 90vh;
+
+  &.ls{
+    width: 100%;
+    height: auto;
+  }
+  &.pt{
+    width:100%;
+    .layer{
+      width:auto;
+      height: 100%;
+    }
+  }
+}
+
+.layer{
+  width:100%;
+  position: absolute;
+  top:0;
+  /*-webkit-filter: drop-shadow(7px 5px 7px rgba(0,0,0,0.5));
+  filter: drop-shadow(7px 5px 7px rgba(0,0,0,0.5));*/
+  &[layer = "0"]{
+    transform: translateZ(0);
+  }
+  &[layer = "1"]{
+    transform: translateZ(calc(@layerDepth * 1px));
+  }
+  &[layer = "2"]{
+    transform: translateZ(calc(@layerDepth * 2px));
+  }
+  &[layer = "3"]{
+    transform: translateZ(calc(@layerDepth * 3px));
+  }
+  &[layer = "4"]{
+    transform: translateZ(calc(@layerDepth * 4px));
+  }
+  &[layer = "5"]{
+    transform: translateZ(calc(@layerDepth * 5px));
+  }
+  &[layer = "6"]{
+    transform: translateZ(calc(@layerDepth * 6px));
+  }
+  &[layer = "7"]{
+    transform: translateZ(calc(@layerDepth * 7px));
+  }
+  &[layer = "8"]{
+    transform: translateZ(calc(@layerDepth * 8px));
+  }
+}

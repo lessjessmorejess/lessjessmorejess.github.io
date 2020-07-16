@@ -23,7 +23,7 @@ $(document).ready(function() {
         piece = json.papercraft[source]
         if (piece != undefined){
           document.title = piece.name + ' — Stephen Leslie'
-
+          $(".tiltBox").addClass(piece.orientation)
           $("#menuButton").click(function(){
             mOpen = !mOpen
             if (mOpen){
