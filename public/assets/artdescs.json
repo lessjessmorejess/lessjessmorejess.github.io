@@ -119,7 +119,7 @@
          "purchase":"0",
          "directory": "/public/assets/thesedays/",
          "preview": "thesedaysP.png",
-         "layerDepth":"5",
+         "layerDepth":"4",
          "layers":[
             "thesedays1.png",
             "thesedays2.png",
@@ -128,8 +128,7 @@
             "thesedays5.png",
             "thesedays6.png",
             "thesedays7.png",
-            "thesedays8.png",
-            "thesedays9.png"
+            "thesedays8.png"
          ]
        }
      }
