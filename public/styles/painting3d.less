@@ -9,12 +9,12 @@ body { font-family: sans-serif; }
 
 //Animations
 @-webkit-keyframes float {
-    0% { transform: translateY(@framesize/2); }
-    100% { transform: translateY(@framesize); }
+    0% { transform: translateY(-@framesize/4); }
+    100% { transform: translateY(@framesize/4); }
 }
 @keyframes float {
-    0% { transform: translateY(@framesize/2); }
-    100% { transform: translateY(@framesize); }
+    0% { transform: translateY(-@framesize/4); }
+    100% { transform: translateY(@framesize/4); }
 }
 @-webkit-keyframes spin {
     0% { transform: translateZ(-200px) rotateY(-50deg) ; }
@@ -37,17 +37,33 @@ body { font-family: sans-serif; }
 //https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin
 
 .scene {
-width: @width;
+  position: relative;
+width: 100%;
 height: @height;
 border:unset;
-margin: 50px auto;
+right: 20%;
+margin: 50px;
 perspective: @height;
-background:@doubleframe;
 
 &.idle{
   -webkit-animation: float 1.5s ease-in-out infinite alternate;
   animation:         float 1.5s ease-in-out infinite alternate;
       }
+}
+#pbg{
+  width:100%;
+  height:@height;
+  position: absolute;
+  perspective: @height;
+  transform-style: preserve-3d;
+  div{
+    transform-origin: right center;
+    width:70%;
+    height:@height * 1.15;
+    position: absolute;
+    background: #4b4b4b;
+    transform: rotateY(-30deg);
+  }
 }
 
 #box {
