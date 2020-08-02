@@ -7,47 +7,50 @@
 </head>
 <body>
   Scope out P5 "processing" for 3D stuff
+  <section>
   <div id="pbg">
     <div>
     </div>
   </div>
   <div class="scene idle">
-  <div id="box" class="idle">
-    <div class="box__face box__face--front"></div>
-    <div class="box__face box__face--behind"></div>
-    <div class="box__face box__face--back"></div>
-    <div class="box__face box__face--right"></div>
-    <div class="box__face box__face--right--inside"></div>
-    <div class="box__face box__face--left"></div>
-    <div class="box__face box__face--left--inside"></div>
-    <div class="box__face box__face--top"></div>
-    <div class="box__face box__face--top--inside"></div>
-    <div class="box__face box__face--bottom"></div>
-    <div class="box__face box__face--bottom--inside"></div>
+    <div id="box" class="idle">
+      <div class="box__face box__face--front"></div>
+      <div class="box__face box__face--behind"></div>
+      <div class="box__face box__face--back"></div>
+      <div class="box__face box__face--right"></div>
+      <div class="box__face box__face--right--inside"></div>
+      <div class="box__face box__face--left"></div>
+      <div class="box__face box__face--left--inside"></div>
+      <div class="box__face box__face--top"></div>
+      <div class="box__face box__face--top--inside"></div>
+      <div class="box__face box__face--bottom"></div>
+      <div class="box__face box__face--bottom--inside"></div>
+    </div>
   </div>
-</div>
-<ul id="angles">
-  <li class="iAngle" name="rotate-cube-side" value="-45" > qbleft </li>
-  <li class="iAngle" name="rotate-cube-side" value="0" > left </li>
-  <li class="iAngle" name="rotate-cube-side" value="45" > qleft </li>
-  <li class="iAngle" name="rotate-cube-side" value="90"> front </li>
-  <li class="iAngle" name="rotate-cube-side" value="135" > qright </li>
-  <li class="iAngle" name="rotate-cube-side" value="180" > right </li>
-  <li class="iAngle" name="rotate-cube-side" value="225" > qbright </li>
-  <li class="iAngle" name="rotate-cube-side" value="270" > back </li>
-</ul>
+  <ul id="angles">
+    <li class="iAngle" name="rotate-cube-side" value="-45" > qbleft </li>
+    <li class="iAngle" name="rotate-cube-side" value="0" > left </li>
+    <li class="iAngle" name="rotate-cube-side" value="45" > qleft </li>
+    <li class="iAngle" name="rotate-cube-side" value="90"> front </li>
+    <li class="iAngle" name="rotate-cube-side" value="135" > qright </li>
+    <li class="iAngle" name="rotate-cube-side" value="180" > right </li>
+    <li class="iAngle" name="rotate-cube-side" value="225" > qbright </li>
+    <li class="iAngle" name="rotate-cube-side" value="270" > back </li>
+  </ul>
 
 
-</div>
+</section>
 <script>
 var box = document.querySelector('#box');
 var scene = document.querySelector('.scene');
+var background = document.querySelector('#pbg div');
 
 var currentClass = '';
 $( ".iAngle" ).hover(function(){
   var showClass = 'show-' + $(this).val();
   scene.classList.remove("idle")
   box.classList.remove("idle")
+  background.classList.add("hover")
   console.log(showClass)
   if ( currentClass ) {
     box.classList.remove( currentClass );
@@ -58,6 +61,7 @@ $( ".iAngle" ).hover(function(){
 $('#angles').mouseleave(function(){
   box.classList.add("idle");
 scene.classList.add("idle");
+background.classList.remove("hover")
 })
 
 function ScalePainting(width){
