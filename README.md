@@ -1,4 +1,4 @@
-# StephLess
+# lessjessmorejess
 A place to showcase my art, code, & game work
 
-https://stephless.github.io
+https://lessjessmorejess.github.io
