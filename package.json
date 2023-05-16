@@ -1,8 +1,8 @@
 {
   "name": "lessjessmorejess.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "A portfolio of my work",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/lessjessmorejess/lessjessmorejess.github.io.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "portfolio",
+    "art",
+    "programing"
+  ],
+  "author": "Jessie Leslie",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lessjessmorejess/lessjessmorejess.github.io/issues"
   },
   "homepage": "https://github.com/lessjessmorejess/lessjessmorejess.github.io#readme",
   "dependencies": {
+    "less": "^3.11.3",
     "vanilla-tilt": "^1.7.0"
   }
 }

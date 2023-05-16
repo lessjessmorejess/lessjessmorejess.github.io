@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet/less" type="text/css" href="/public/styles/painting3d.less" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js" ></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+<body>
+  <section>
+  <div id="pbg">
+    <div>
+    </div>
+  </div>
+  <div class="scene idle">
+    <div id="box" class="idle">
+      <div class="box__face box__face--front"></div>
+      <div class="box__face box__face--behind"></div>
+      <div class="box__face box__face--back"></div>
+      <div class="box__face box__face--right"></div>
+      <div class="box__face box__face--right--inside"></div>
+      <div class="box__face box__face--left"></div>
+      <div class="box__face box__face--left--inside"></div>
+      <div class="box__face box__face--top"></div>
+      <div class="box__face box__face--top--inside"></div>
+      <div class="box__face box__face--bottom"></div>
+      <div class="box__face box__face--bottom--inside"></div>
+    </div>
+  </div>
+  <ul id="angles">
+    <li class="iAngle" name="rotate-cube-side" value="-45" > qbleft </li>
+    <li class="iAngle" name="rotate-cube-side" value="0" > left </li>
+    <li class="iAngle" name="rotate-cube-side" value="45" > qleft </li>
+    <li class="iAngle" name="rotate-cube-side" value="90"> front </li>
+    <li class="iAngle" name="rotate-cube-side" value="135" > qright </li>
+    <li class="iAngle" name="rotate-cube-side" value="180" > right </li>
+    <li class="iAngle" name="rotate-cube-side" value="225" > qbright </li>
+    <li class="iAngle" name="rotate-cube-side" value="270" > back </li>
+  </ul>
+
+
+</section>
+<script>
+var box = document.querySelector('#box');
+var scene = document.querySelector('.scene');
+var background = document.querySelector('#pbg div');
+
+var currentClass = '';
+$( ".iAngle" ).hover(function(){
+  var showClass = 'show-' + $(this).val();
+  scene.classList.remove("idle")
+  box.classList.remove("idle")
+  background.classList.add("hover")
+  console.log(showClass)
+  if ( currentClass ) {
+    box.classList.remove( currentClass );
+  }
+  box.classList.add( showClass );
+  currentClass = showClass;
+});
+$('#angles').mouseleave(function(){
+  box.classList.add("idle");
+scene.classList.add("idle");
+background.classList.remove("hover")
+})
+
+function ScalePainting(width){
+less.modifyVars({
+  '@width': width + 'px'
+});
+}
+
+</script>
+</body>
