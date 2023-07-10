@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/lessjessmorejess/lessjessmorejess.github.io#readme",
   "dependencies": {
-    "less": "^3.11.3",
+    "less": "^3.13.1",
     "vanilla-tilt": "^1.7.0"
   }
 }
